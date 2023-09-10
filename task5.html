@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            table{
+                max-width:fit-content;
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+            th,td{
+                max-width:fit-content;
+                border-collapse:collapse;
+                border:1px solid black;
+                text-align:left;
+            }
+            #submit {
+            position:fixed;
+            text-align:center;
+        }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h2 margin="Center" style="color:DodgerBlue">Registraion Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+                <tr>
+                    <td><label for="fname"><b>First Name</b></label></td>
+                    <td><input type="text" id="fname" name="fname" size="100px" required> </td>
+                </tr>
+                <tr>
+                    <td><label for="lname"><b>Last Name</b></label></td>
+                    <td><input type="text" id="lname" name="lname" size="100px" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Email</b></label></td>
+                    <td><input type="email" id="email" name="email" size="100px" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd"><b>Password</b></label></td>
+                    <td><input type="password" id="pwd" name="pwd" size="100px"required></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd1"><b>Re-enter Password</b></b></label></td>
+                    <td><input type="password" id="pwd1" name="pwd1"  size="100px"pattern!=pwd title="Password don't match.Try again."></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><b>Gender:</b></td>
+                    <td><label><input type="radio" name="gen" value="male">Male</label></td>
+                </tr>
+                <tr>
+                <td><label><input type="radio" name="gen" value="female">Female</label></td>
+                </tr>
+                <tr>
+                    <td><label><b>Age:</b></label></td>
+                    <td><label><input type="number" name="age" size="100px" required min="18"></label></td>
+                </tr>
+                <tr>
+                    <td><label><b>Phone Number:</b></label></td>
+                    <td>
+                        <label><input type="text"  name="cd" placeholder="+1" required size="3"></label>
+                        <label><input type="tel" name="phno" placeholder="123-456-7890" required size="12"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label ><b>Address</b></label></td>
+                    <td><label><textarea name="full_address" cols="98" rows="6"></textarea></label></td>
+                </tr>
+                <tr>
+                <td><label><b>State</b></label></td>
+                <td><label><select id="state" name="state">
+                    <option value="">Select a state</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                </label></td>
+             </tr>
+             <tr>
+                <td><label><b>Country</b></label></td>
+                <td><label><select id="country" name="country">
+                    <option value="">Choose Your Country</option>
+                    <option value="Bharat">Bharat</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                </select>
+              </label></td>
+             </tr>
+             <tr>
+                <td><label><b>Language Known</b></label></td>
+                <td>
+                    <label><input type="Checkbox" name="l1" value="Hindi">Hindi</label>
+                    <label><input type="Checkbox" name="l2" value="English">English</label>
+                    <label><input type="Checkbox" name="l3" value="Sanskrit">Sanskrit</label>
+                    <label><input type="Checkbox" name="l4" value="French">French</label>
+                </td>
+             </tr>
+             <tr>
+                <td colspan="2">
+                    <label><input type="checkbox" name="terms" checked>Hereby I declare all the given details are true</label>
+                </td>
+             </tr>
+             <tr>
+                <td colspan="2" style="text-align:right;">Log in to <b><a href="https://ethnus.com/">Ethnus </a></b> website</td>
+             </tr>
+            </table>
+            <div style="text-align:center;">
+            <input type="submit" name="save" value="Register"><br>
+            </div>
+        </form>
+    </center>
+    </body>
+</html>

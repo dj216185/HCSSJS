@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       #vertical-nav{
+        
+        background-color: rgb(162, 235, 235);
+        width: 150px;
+        padding-bottom: 5px;
+        
+        
+       }
+       #vertical-nav a{
+        display: block;
+        color:blue;
+        font-family:'Times New Roman', Times, serif ;
+        margin-bottom: 10px;
+        text-decoration: none;
+        border-left: 3px solid transparent;
+        font-size: large;
+        align-items: center;
+       }
+       .text{
+             height: 30px;
+             padding-top: 7px;
+            padding-left: 15px;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+            display: block;
+            border-color: rgb(223, 157, 36);
+            background-color: rgb(223, 157, 36);
+            font-family:'Times New Roman', Times, serif ;
+       }
+       #text2{
+           height: 30px;
+           width: 100px;
+           background-color: #555;
+           color: white;
+           font-family: serif;
+           padding-top: 5px;
+           padding-left: 30px;
+           font-size: larger;
+       }
+
+       .nav{
+           height: 10px;
+           width: 100px;
+           color: blue;
+           background-color: #afafaf;
+           
+           font-size: larger;
+           padding-left: 10px;
+          
+       }
+       .nav a{
+        color: blue;
+        font-family: serif;
+       }
+
+
+        .vertical-nav a.active {
+            background-color: #555;
+            border-left-color: rgb(223, 157, 36);
+        }
+    </style>
+</head>
+<body>
+    
+    <table border="1" cellpadding="" cellspacing="0" bordercolor="white" bgcolor="" heigh="40">
+        <h3>Vertical Navigation Bar</h3>
+        <tr>
+            <td > <div 
+                id="vertical-nav">
+                <h2 class="text" >Home</h2>
+                <a href="https://www.javatpoint.com/" target="_blank">Java</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"target="_blank">CSS</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+                <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+               </div></td>
+        </tr>
+    </table>
+
+
+
+
+    <table  cellpadding="0" cellspacing="0"heigh="" width="">
+        <h3>Horizontal Navigation Bar</h3>
+        
+        <tr>
+            <td id="text2"><a href=""></a>Home</td>
+            <td class="nav"><a href="https://www.javatpoint.com/" target="_blank">Java</a></td>
+            <td class="nav"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></td>
+            <td class="nav"> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></td>
+            <td class="nav"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>  </td>
+              </tr>
+    </table>
+  
+</body>
+</html>
